@@ -1,0 +1,22 @@
+{
+    "name": "iszelei/osticket-sdk",
+    "description": "Read and write SDK for OsTicket ticketing system.",
+    "type": "library",
+    "keywords": ["osticket","sdk"],
+    "license": "MIT",
+    "homepage":"https://github.com/iszelei/osticket-sdk",
+    "authors": [
+        {
+            "name": "Szelei István",
+            "email": "sz.stvan@outlook.com"
+        }
+    ],
+	"require": {
+		"php": ">=5.4"
+	},
+    "autoload": {
+        "psr-4": {
+            "Iszelei\\OsTicketSDK\\": "src"
+        }
+    }
+}
