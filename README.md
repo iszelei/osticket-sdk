@@ -3,6 +3,10 @@
 Read and write sdk for OsTicket 1.9. Read operations requires:
 http://www.cyberde.nl/software-en-US/osticket-soap-mod/
 
+### Installition
+
+composer require iszelei/osticket-sdk
+
 ### Examples
 ```
 /* FOR WRITE ONLY */
