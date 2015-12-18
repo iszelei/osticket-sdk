@@ -45,8 +45,8 @@ $staff = new Iszelei\OsTicketSDK\Staff(
 );
 
 $osTicket = new Iszelei\OsTicketSDK\OsTicketSDK(
-	'USERNAME',
-	'PASSWORD',
+	'OSTICKET_API_KEY',
+	'OSTICKET_API_URL',
 	$staff,
 	'WSDL_URL'
 );
