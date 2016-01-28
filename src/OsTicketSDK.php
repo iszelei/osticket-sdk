@@ -103,4 +103,19 @@ class OsTicketSDK {
         return $this->reader->departmentTopics($departmentId);
     }
 
+    /**
+     * Retrieve one topic information
+     *
+     * @param $id ID of topic
+     * @return \stdClass|null
+     */
+    public function getTopic($id)
+    {
+        $topics = $this->listTopics();
+        $topics = array_filter($topics, function($topic) use ($id) {
+            return ((int) $topic->id === (int) $id);
+        });
+        return array_pop($topics);
+    }
+
 }
