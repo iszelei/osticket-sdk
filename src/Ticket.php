@@ -223,6 +223,18 @@ class Ticket {
     }
 
     /**
+     * @param string $name
+     * @param mixed $value
+     * @return Ticket $this
+     */
+    public function setCustom($name, $value)
+    {
+        $this->$name = $value;
+
+        return $this;
+    }
+
+    /**
      * @throws MisisngParameterException
      */
     public function validate() {
